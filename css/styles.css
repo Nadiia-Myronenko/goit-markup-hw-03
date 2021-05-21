@@ -22,6 +22,17 @@ a {
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+p {
+  margin: 0;
 }
 h2 {
   font-weight: bold;
@@ -31,9 +42,13 @@ h2 {
   letter-spacing: 0.03em;
   color: var(--hedding-color);
 }
-.conteiner {
-  width: 1200px;
+.container {
+  width: 1230px;
+  padding: 0 15px;
   margin: 0 auto;
+}
+.section {
+  padding: 94px 0;
 }
 /* Header styles */
 .logo {
@@ -93,6 +108,8 @@ h2 {
 }
 .hero-btn {
   /*задать на нее фокус и ховер!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  padding: 10px 32px;
+
   background: var(--brand-color);
   font-family: inherit;
   font-weight: bold;
@@ -111,6 +128,7 @@ h2 {
 .hero-btn:focus {
   text-shadow: 2px 1px 5px #2c2c31;
   cursor: pointer;
+  display: inline-block;
 }
 /* Herro secion end*/
 /* Work peculiarities section */
@@ -149,6 +167,9 @@ h2 {
 
 /* Styles for main section of the page portfolio.html */
 .btn {
+  display: inline-block;
+  padding: 6px 22px;
+
   background: var(--button-background);
   color: var(--hedding-color);
   font-family: inherit;
