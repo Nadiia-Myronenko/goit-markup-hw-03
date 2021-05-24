@@ -51,7 +51,20 @@ h2 {
   padding: 94px 0;
 }
 /* Header styles */
+.header-block .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  align-items: baseline;
+}
+.nav-block {
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+}
+
 .logo {
+  margin: 0 93px 25px 0;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -63,7 +76,13 @@ h2 {
 .brand-color {
   color: var(--brand-color);
 }
+.main-nav {
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+}
 .nav-link {
+  margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -71,7 +90,13 @@ h2 {
   color: var(--hedding-color);
   text-decoration: none;
 }
+.address-list {
+  display: flex;
+  justify-content: right;
+  align-items: baseline;
+}
 .address-link {
+  margin-left: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -87,7 +112,7 @@ h2 {
   color: var(--brand-color);
 }
 .header-block {
-  border: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 /* Header styles end */
 
@@ -97,7 +122,11 @@ h2 {
 .hero {
   background: var(--hero-background);
 }
+.hero .container {
+  padding: 106px 282px;
+}
 .main-heading {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -109,13 +138,13 @@ h2 {
 .hero-btn {
   /*задать на нее фокус и ховер!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   padding: 10px 32px;
-
+  margin: 0 auto;
   background: var(--brand-color);
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
-  display: flex;
+  display: block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -128,7 +157,6 @@ h2 {
 .hero-btn:focus {
   text-shadow: 2px 1px 5px #2c2c31;
   cursor: pointer;
-  display: inline-block;
 }
 /* Herro secion end*/
 /* Work peculiarities section */
